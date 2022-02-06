@@ -3,7 +3,7 @@
   "author": "Gustavo Lopes <gustavo.hlopess@gmail.com>",
   "license": "MIT",
   "sideEffects": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "types": "dist/class-validator-mocker.d.ts",
   "typings": "dist/class-validator-mocker.d.ts",
   "main": "dist/class-validator-mocker.js",
