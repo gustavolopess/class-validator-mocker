@@ -1,5 +1,8 @@
 # class-validator-mocker
 
+![](https://github.com/gustavolopess/class-validator-mocker/actions/workflows/continuous_integration.yml/badge.svg)
+
+
 Uses decorators from [class-validator](https://github.com/typestack/class-validator) to generate
 objects filled with random values with types based on used decorators.
 
