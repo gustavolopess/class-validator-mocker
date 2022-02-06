@@ -1,6 +1,6 @@
 import 'reflect-metadata';
 
-import {randomBytes, randomInt, randomUUID} from 'node:crypto';
+import {randomBytes, randomInt, randomUUID} from 'crypto';
 import {getMetadataStorage, IS_BOOLEAN, IS_NUMBER, IS_STRING, IS_UUID} from 'class-validator';
 import {ValidationMetadata} from 'class-validator/types/metadata/ValidationMetadata';
 
