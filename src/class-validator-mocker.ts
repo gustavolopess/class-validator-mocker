@@ -7,11 +7,11 @@ import {ValidationMetadata} from 'class-validator/types/metadata/ValidationMetad
 type AvailableTypes = string | number | boolean | undefined;
 
 export class ClassValidatorMocker {
-	public static create<T>(constructor: new () => T, partial: Partial<T> = {}): T {
+	public static create<T>(constructor: Function, partial: Partial<T> = {}): T {
 		return new ClassValidatorMocker().create(constructor, partial);
 	}
 
-	public create<T>(constructor: new () => T, partial: Partial<T> = {}): T {
+	public create<T>(constructor: Function, partial: Partial<T> = {}): T {
 		const metadataStorage = getMetadataStorage();
 		const targetMetadatas = metadataStorage.getTargetValidationMetadatas(
 			constructor,
