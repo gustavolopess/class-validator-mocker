@@ -5,6 +5,9 @@ module.exports = {
     "parserOptions": {
       "ecmaVersion": 2018
     },
+    "rules": {
+      "@typescript-eslint/ban-types": "off",
+    },
     "overrides": [
       {
         "files": ["**/*.spec.ts"],
