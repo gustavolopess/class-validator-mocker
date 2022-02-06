@@ -53,7 +53,7 @@ export class ClassValidatorMocker {
 					case IS_BOOLEAN:
 						return this.randomBoolean();
 					case IS_UUID:
-						return randomUUID();
+						return this.randomUUID();
 					default:
 						break;
 				}
@@ -73,5 +73,13 @@ export class ClassValidatorMocker {
 
 	private randomBoolean(): boolean {
 		return randomInt(0, 1) === 1;
+	}
+
+	private randomUUID(): string {
+		if (randomUUID != null) {
+			return randomUUID();
+		}
+
+		return randomBytes(16).toString('hex');
 	}
 }
